@@ -1,12 +1,12 @@
 
-var altura = 0
-var largura = 0
+var height = 0
+var wight = 0
 
 function ajustaTamanhoPalcoJogo() {
-	altura = window.innerHeight
-	largura = window.innerWidth
+	height = window.innerHeight
+	wight = window.innerWidth
 
-	console.log(largura, altura)
+	console.log(wight, height)
 }
 
 ajustaTamanhoPalcoJogo()
@@ -14,26 +14,26 @@ ajustaTamanhoPalcoJogo()
 
 function posicaoRandomica() {
 
-	var posicaoX = Math.floor(Math.random() * largura) - 90
-	var posicaoY = Math.floor(Math.random() * altura) - 90
+	var positionX = Math.floor(Math.random() * wight) - 90
+	var positionY = Math.floor(Math.random() * height) - 90
 
-	posicaoX = posicaoX < 0 ? 0 : posicaoX
-	posicaoY = posicaoY < 0 ? 0 : posicaoY
+	positionX = positionX < 0 ? 0 : positionX
+	positionY = positionY < 0 ? 0 : positionY
 
-	console.log(posicaoX, posicaoY)
+	console.log(positionX, positionY)
 
 	//criar o elemento html
 	var mosquito = document.createElement('img')
 	mosquito.src = 'imagens/mosquito.png'
-	mosquito.className = tamanhoAleatorio()
-	mosquito.style.left = posicaoX + 'px'
-	mosquito.style.top = posicaoY + 'px'
+	mosquito.className = sizeRandom()
+	mosquito.style.left = positionX + 'px'
+	mosquito.style.top = positionY + 'px'
 	mosquito.style.position = 'absolute'
 
 	document.body.appendChild(mosquito)
 }
 
-function tamanhoAleatorio() {
+function sizeRandom() {
 	var classe = Math.floor(Math.random() * 3)
 	
 	switch(classe) {
