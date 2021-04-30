@@ -6,10 +6,14 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="js/game.js"></script>
 	</head>
-	<body onresize="ajustaTamanhoPalcoJogo()">
+	<body onresize="adjustStageSizeGame()">
 
 		<script>
-			posicaoRandomica()
+			setInterval(function(){
+                
+                positionRandom()
+            }, 1000)
+            
 		</script>
 	</body>
 </html>
