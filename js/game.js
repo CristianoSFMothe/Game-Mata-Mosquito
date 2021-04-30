@@ -25,7 +25,7 @@ function posicaoRandomica() {
 	//criar o elemento html
 	var mosquito = document.createElement('img')
 	mosquito.src = 'imagens/mosquito.png'
-	mosquito.className = sizeRandom()
+	mosquito.className = sizeRandom() + ' ' + sideRandom()
 	mosquito.style.left = positionX + 'px'
 	mosquito.style.top = positionY + 'px'
 	mosquito.style.position = 'absolute'
@@ -45,6 +45,18 @@ function sizeRandom() {
 
 		case 2:
 			return 'mosquito3'
+	}
+}
+
+function sideRandom() {
+    var classe = Math.floor(Math.random() * 2)
+	
+	switch(classe) {
+		case 0:
+			return 'sideA'
+		
+		case 1:
+			return 'sideB'
 	}
 }
 

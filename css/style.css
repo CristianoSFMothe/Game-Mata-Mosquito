@@ -12,3 +12,7 @@
 	width: 90px;
 	height: 90px;
 }
+
+.sideB {
+    transform: scaleX(-1);
+}
