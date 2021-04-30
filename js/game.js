@@ -1,39 +1,50 @@
-var height = 0
-var wight = 0
 
-function adjustStageSize() {
+var altura = 0
+var largura = 0
 
-    height = window.innerHeight
-    wight = window.innerWidth
-    console.log(height, wight)
+function ajustaTamanhoPalcoJogo() {
+	altura = window.innerHeight
+	largura = window.innerWidth
+
+	console.log(largura, altura)
 }
 
-adjustStageSize()
+ajustaTamanhoPalcoJogo()
 
-// function positionRandom() {
 
-    var positionX = Math.floor(Math.random() * height) - 90
-    var positionY = Math.floor(Math.random() * wight) - 90
+function posicaoRandomica() {
 
-    positionX = positionX < 0 ? 0 : positionX
-    positionY = positionY < 0 ? 0 : positionY
-        
-    console.log(positionX, positionY)
-    
-    // Criar o elemento HTML
-    var gnat = document.createElement('img')
-    gnat.src = 'img/gnat.png'
-    gnat.className = 'gnat1'
-    gnat.style.left = positionX + 'px'
-    gnat.style.top = positionY + 'px'
-    gnat.style.position = 'absolute'
-    
-    document.body.appendChild(gnat)
+	var posicaoX = Math.floor(Math.random() * largura) - 90
+	var posicaoY = Math.floor(Math.random() * altura) - 90
 
-// }]
+	posicaoX = posicaoX < 0 ? 0 : posicaoX
+	posicaoY = posicaoY < 0 ? 0 : posicaoY
 
-function sizeRandom() {
-    let class = Math.random()
+	console.log(posicaoX, posicaoY)
+
+	//criar o elemento html
+	var mosquito = document.createElement('img')
+	mosquito.src = 'imagens/mosquito.png'
+	mosquito.className = tamanhoAleatorio()
+	mosquito.style.left = posicaoX + 'px'
+	mosquito.style.top = posicaoY + 'px'
+	mosquito.style.position = 'absolute'
+
+	document.body.appendChild(mosquito)
 }
 
+function tamanhoAleatorio() {
+	var classe = Math.floor(Math.random() * 3)
+	
+	switch(classe) {
+		case 0:
+			return 'mosquito1'
+		
+		case 1:
+			return 'mosquito2'
+
+		case 2:
+			return 'mosquito3'
+	}
+}
 
