@@ -3,6 +3,21 @@ var height = 0
 var wight = 0
 var life = 1
 var time = 15
+var createMosquitoTime = 1500
+
+var level = window.location.search
+level = level.replace('?', '')
+
+if(level == 'normal') {
+    // 1500
+    var createMosquitoTime = 1500
+} else if (level === 'dificil') {
+    // 1000
+    var createMosquitoTime = 1000
+} else if (level === 'chucknorris') {
+    // 750
+    var createMosquitoTime = 750
+}
 
 function adjustStageSizeGame() {
 	height = window.innerHeight

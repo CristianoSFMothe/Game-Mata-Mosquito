@@ -6,5 +6,5 @@ function startGame() {
         return false
     }
 
-    alert(level)
+    window.location.href = "app.html?" + level
 }
