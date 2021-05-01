@@ -2,15 +2,30 @@
 var height = 0
 var wight = 0
 var life = 1
+var time = 15
 
-function ajustaTamanhoPalcoJogo() {
+function adjustStageSizeGame() {
 	height = window.innerHeight
 	wight = window.innerWidth
 
 	console.log(wight, height)
 }
 
-ajustaTamanhoPalcoJogo()
+adjustStageSizeGame()
+
+var timepiece = setInterval(function() {
+
+    time -= 1
+
+    if(time < 0) {
+        clearInterval(timepiece)
+        clearInterval(createMosquito)
+        alert('Vitoria')
+    } else {
+
+        document.getElementById('timepiece').innerHTML = time
+    }
+}, 1000)
 
 
 function positionRandom() {

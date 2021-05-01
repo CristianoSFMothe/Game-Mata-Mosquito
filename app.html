@@ -10,17 +10,19 @@
 
         <div class="panel">
             <div class="life">
-                <img id="v1" src="imagens/coracao_cheio.png" alt="Coração cheio">
+                <img id="v" src="imagens/coracao_cheio.png" alt="Coração cheio">
                 <img id="v2" src="imagens/coracao_cheio.png" alt="Coração cheio">
                 <img id="v3" src="imagens/coracao_cheio.png" alt="Coração cheio">
 
             </div>
 
-            <div class="time">Tempo restante: ?</div>
+            <div class="time">Tempo restante: <span id="timepiece"></span></div>
         </div>
 
 		<script>
-			setInterval(function(){
+            document.getElementById('timepiece').innerHTML = time
+
+			var createMosquito = setInterval(function(){
                 
                 positionRandom()
             }, 2000)
