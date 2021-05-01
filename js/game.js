@@ -20,7 +20,7 @@ function positionRandom() {
         document.getElementById('mosquito').remove()
 
         if(life > 3) {
-            alert('Game Over')
+            window.location.href = '../game-over.html'
         } else {
 
             document.getElementById('v' + life).src = "../imagens/coracao_vazio.png"
