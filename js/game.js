@@ -20,7 +20,7 @@ var timepiece = setInterval(function() {
     if(time < 0) {
         clearInterval(timepiece)
         clearInterval(createMosquito)
-        alert('Vitoria')
+        window.location.href = 'vitoria.html'
     } else {
 
         document.getElementById('timepiece').innerHTML = time
