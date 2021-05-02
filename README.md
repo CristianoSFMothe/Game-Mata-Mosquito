@@ -16,3 +16,9 @@
 * O código estar aberto para aqueles que desejarem ajuda, aceito sugestões :smile:
 
 ![Game Over](https://user-images.githubusercontent.com/68359459/116767691-0d07b000-aa08-11eb-91c2-e58fe36d7ba9.png)
+
+* Uma pequena demostração da jogabilidade
+
+
+https://user-images.githubusercontent.com/68359459/116813764-d75be780-ab2b-11eb-850f-209dbea4cc6d.mp4
+
