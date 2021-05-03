@@ -1,7 +1,15 @@
 # Game Mata Mosquito
 ***
 
-### Um dos primeiros projetos criados
+## Um dos primeiros projetos criados
+
+### 🚀 Tecnologia utilizada
+
+O projeto foi desenvolvido utilizando as seguinte tecnologia
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Bootstrap](https://getbootstrap.com/)
 
 
 ![Tela inicial](https://user-images.githubusercontent.com/68359459/116813660-3b31e080-ab2b-11eb-94d5-4e6179aef3d2.png)
